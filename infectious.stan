@@ -15,7 +15,7 @@ functions {
 }
 
 data {
-  int<lower =1> n_obs; //number of days observed
+  int<lower = 1> n_obs; //number of days observed
   int<lower = 1> n_theta; //number of model parameters
   int<lower = 1> n_difeq; //number of differential equations
   int<lower = 1> n_pop; //population
