@@ -52,10 +52,7 @@ model {
   S0~beta(0.5, 0.5);
   
   //likelihood
-  for (i in 1:n_obs){
-    lambda[i] = y_hat[i,2]*n_pop;
-  }
-  y~binomial(n_pop, y_hat[,2])  
+  y~binomial(n_pop, y_hat[,2]);
 }
 
 generated quantities {
