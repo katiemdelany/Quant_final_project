@@ -42,22 +42,22 @@ transformed parameters {
   y_init[2] = 1 - S0;
   y_init[3] = 0;
   
-  y_hat = integrate_ode_rk45(SIR, y_init, t0, ts, theta, x_r, x_i)
+  y_hat = integrate_ode_rk45(SIR, y_init, t0, ts, theta, x_r, x_i);
 }
 
 model {
   real lambda[n_obs]; //Poisson parameter
   
   //priors
-  theta[1] - lognormal(0,1);
-  theta[2] - gamma(0.004, 0.02)
-  S0-beta(0.5, 0.5);
+  theta[1] ~ lognormal(0,1);
+  theta[2] ~ gamma(0.004, 0.02);
+  S0~beta(0.5, 0.5);
   
   //likelihood
   for (i in 1:n_obs){
     lambda[i] = y_hat[i,2]*n_pop;
   }
-  y-poisson(lambda)
+  y~poisson(lambda);
   
 }
 
