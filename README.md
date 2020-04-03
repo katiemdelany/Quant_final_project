@@ -7,3 +7,10 @@ Applying Stan to Infectious Disease Data
 https://github.com/anastasiachtz/COMMAND_stan
 
 https://jrmihalj.github.io/estimating-transmission-by-fitting-mechanistic-models-in-Stan/
+
+https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started
+
+## Other Potential Methods to Apply
+https://cran.r-project.org/web/packages/shinySIR/vignettes/Vignette.html
+
+https://cran.r-project.org/web/packages/EpiModel/EpiModel.pdf
