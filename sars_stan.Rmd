@@ -39,20 +39,6 @@ sars_data = list(n_obs = N,
             )
 sars_data
 
-#onset <- dengue_yap_2011$onset_date
-#cases <- dengue_yap_2011$value
-#N=length(onset)
-#pop = 7391
-#sample_time = 1:N
-#dengue_data = list(n_obs = N,
-#                n_theta = 2,
-#                n_difeq = 3,
-#                n_pop = pop,
-#                y = cases,
-#                t0 = 0,
-#                ts = sample_time
-#            )
-
 # Specify parameters to monitor
 parameters = c("y_hat", "y_init", "theta",  "R_0")  #deterministic models (Model 1, Model 2)
 parameters_stoch = c("y_hat", "y_init", "theta", "kappa", "lambda", "phi", "s_sq", "sigma", "R_0")  #stochastic model (Model 3)
