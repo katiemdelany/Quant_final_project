@@ -45,7 +45,7 @@ parameters_stoch = c("y_hat", "y_init", "theta", "kappa", "lambda", "phi", "s_sq
 
 ```
 
-In the context of a deterministic SIR, in order to estimate the transmission and the recovery rate, we use two different specifications and we fit the models using Stan's NUTS algorithm and the mean-field ADVI variant.
+In the context of a deterministic SIR, in order to estimate the transmission and the recovery rate, we attempted to use two different specifications and to fit the models using Stan's NUTS algorithm and the mean-field ADVI variant; however, we were unsuccessful in adding the mean-field ADVI variant modeling fitting.
 
 ## Model 1 - Poisson model
 
