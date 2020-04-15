@@ -1,9 +1,4 @@
----
-title: "Hierarchical Poisson mixed model"
-author: "Oliver Ratmann, Anastasia Chatzilena"
----
-
-We consider surveillance data for gonorrhoea in England between 2012 and 2016 and build increasingly realistic models reflecting reality. Our aim is to characterize gonorrhoea diagnosis rates by age, gender and geographically and for that purpose we employ a Poisson regression model.
+Our aim is to characterize chlamydia diagnosis rates by age, gender and geographically and for that purpose we employ a Poisson regression model.
 For this example, to make things even easier, we will be using the rethinking R package.
 
 ```{r setup, include=FALSE}
@@ -12,8 +7,6 @@ library(ggplot2)
 library(rethinking)
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-The raw data used in this example can be found in https://www.gov.uk/government/statistics/sexually-transmitted-infections-stis-annual-data-tables.
 Sum the annual gonorrhea cases by age, gender and PHE center, and calculate the corresponding person-years:
 
 ```{r load_data_years, echo = FALSE }
